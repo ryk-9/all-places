@@ -67,7 +67,7 @@ func main() {
 	emailList := NewEmailList("emails.json")
 
 	// Newsletter signup handler
-	http.HandleFunc("/api/signup", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		// Set CORS headers
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.Header().Set("Access-Control-Allow-Methods", "POST, OPTIONS")
@@ -126,7 +126,7 @@ func main() {
 	})
 
 	// Start server
-	fmt.Printf("Server running on port %s...\n", port)
+	fmt.Printf("Server running on http://localhost:%s...\n", port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
 

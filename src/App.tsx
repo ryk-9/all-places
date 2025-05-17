@@ -1,10 +1,16 @@
+// src/App.tsx
 import React from 'react';
-import MHome from './pages/MHome';
-import './styles/index.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/MHome';
 
 function App() {
   return (
-    <MHome />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* Add other routes as needed */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
