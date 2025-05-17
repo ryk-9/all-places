@@ -12,15 +12,15 @@ export const HeroContainer: React.FC<ContainerProps> = ({ className = '' }) => {
       <div className="hero-img-container grid grid-cols-2 gap-4 mb-8">
         <div className="hero-img-1">
           <img 
-            src="/img/hero-img-1.png" 
-            alt="Hero image 1" 
+            src="../../../public/img/hero-img-1.png" 
+            alt="Hero 1" 
             className="w-full h-full object-cover"
           />
         </div>
         <div className="hero-img-2">
           <img 
-            src="/img/hero-img-2.png" 
-            alt="Hero image 2" 
+            src="../../../public/img/hero-img-2.png" 
+            alt="Hero 2" 
             className="w-full h-full object-cover"
           />
         </div>

@@ -6,7 +6,7 @@ export const NavContainer: React.FC<ContainerProps> = ({ className = '' }) => {
     <div className={`nav-container w-full ${className}`}>
       <div className="nav flex items-center justify-between">
         <img 
-          src="/img/logo-1.svg" 
+          src="../../../public/img/logo-1.svg" 
           alt="All Places" 
           className="nav-logo h-[24px]" 
         />

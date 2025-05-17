@@ -7,7 +7,7 @@ export const ContactContainer: React.FC = () => {
       {/* Background image - full screen with overlay */}
       <div className='absolute inset-0 z-0'>
         <img 
-          src='../public/img/contact-team.png' 
+          src='../../../public/img/contact-team.png' 
           alt='Professional team' 
           className='w-full h-full object-cover grayscale'
         />

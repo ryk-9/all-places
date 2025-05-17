@@ -66,8 +66,11 @@ func main() {
 
 	emailList := NewEmailList("emails.json")
 
+	fs := http.FileServer(http.Dir("./build"))
+	http.Handle("/", fs)
+
 	// Newsletter signup handler
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/api/signup", func(w http.ResponseWriter, r *http.Request) {
 		// Set CORS headers
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.Header().Set("Access-Control-Allow-Methods", "POST, OPTIONS")

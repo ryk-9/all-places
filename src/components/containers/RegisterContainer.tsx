@@ -15,17 +15,17 @@ export const RegisterContainer: React.FC = () => {
       {/* Image grid */}
       <div className="grid grid-cols-3 gap-1 mb-16">
         <img 
-          src="../public/img/woman-hair.jpg" 
+          src="../../../public/img/woman-hair.jpg" 
           alt="Woman with hair blowing" 
           className="w-full h-64 object-cover"
         />
         <img 
-          src="../public/img/vintage-car.png" 
+          src="../../../public/img/vintage-car.png" 
           alt="Vintage car taillight" 
           className="w-full h-64 object-cover"
         />
         <img 
-          src="../public/img/hands.jpg" 
+          src="../../../public/img/hands.jpg" 
           alt="Hands with contrasting nail polish" 
           className="w-full h-64 object-cover"
         />

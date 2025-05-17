@@ -21,7 +21,7 @@ export const FooterContainer: React.FC<FooterContainerProps> = ({ className = ''
   // Try to import logo, fallback to text version if import fails
   let LogoComponent = null;
   try {
-    LogoComponent = require('../../public/img/logo.svg').default;
+    LogoComponent = require('../../../public/img/logo.svg').default;
   } catch (e) {
     // SVG import failed - will use text version
   }
