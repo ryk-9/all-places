@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f1eb" />
+  
+  <!-- Primary Meta Tags -->
+  <title>All Places | A better model. Period.</title>
+  <meta name="title" content="All Places | A better model. Period.">
+  <meta name="description" content="All Places represents the next generation of law firms, built on an infrastructure that aligns incentives between our firm and our clients.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thisisallplaces.com/">
+  <meta property="og:title" content="All Places | A better model. Period.">
+  <meta property="og:description" content="All Places represents the next generation of law firms, built on an infrastructure that aligns incentives between our firm and our clients.">
+  <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://thisisallplaces.com/">
+  <meta property="twitter:title" content="All Places | A better model. Period.">
+  <meta property="twitter:description" content="All Places represents the next generation of law firms, built on an infrastructure that aligns incentives between our firm and our clients.">
+  <meta property="twitter:image" content="%PUBLIC_URL%/og-image.jpg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Manifest and icons -->
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+  <!-- Inline styles for initial loading state -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #f5f1eb;
+    }
+    
+    #root {
+      min-height: 100vh;
+    }
+    
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+    }
+    
+    .loading-logo {
+      font-size: 32px;
+      font-weight: bold;
+      opacity: 0.8;
+    }
+    
+    .loading-dash {
+      display: inline-block;
+      width: 32px;
+      height: 2px;
+      background-color: #000;
+      margin: 0 4px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this application.</noscript>
+  <div id="root">
+    <!-- Initial loading state -->
+    <div class="loading">
+      <div class="loading-logo">
+        A<span class="loading-dash"></span>P
+      </div>
+    </div>
+  </div>
+</body>
+</html>
