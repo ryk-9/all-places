@@ -39,11 +39,26 @@ module.exports = {
                 'component': '24px',
             },
             screens: {
-                'sm': '375px',   // Mobile
-                'md': '768px',   // Tablet
-                'lg': '1024px',  // Desktop
-                'xl': '1280px',  // Large desktop
+                'sm': '640px',   // Small devices like phones (landscape)
+                'md': '768px',   // Tablets
+                'lg': '1024px',  // Desktops/laptops
+                'xl': '1280px',  // Large desktops
+                '2xl': '1536px', // Extra large screens
             },
+            container: {
+                screens: {
+                sm: '100%',
+                md: '100%',
+                lg: '1024px',
+                xl: '1280px',
+                },
+            center: true,
+            padding: {
+                DEFAULT: '1rem',
+                lg: '2rem',
+                },
+            },
+
         },
     },
 };

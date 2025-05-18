@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Line } from '../ui/Line'
 
 interface CollapsibleSectionProps {
   title: string;
@@ -9,7 +10,8 @@ const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({ title, children
   const [isExpanded, setIsExpanded] = useState(false);
   
   return (
-    <div className="border-t border-gray-300 px-0">
+    <div>
+      <Line className="w-full" />
       <button 
         className="w-full py-4 flex justify-between items-center text-left focus:outline-none" 
         onClick={() => setIsExpanded(!isExpanded)}
@@ -30,31 +32,30 @@ const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({ title, children
 export const FounderContainer: React.FC = () => {
   return (
     <div className="founder-container bg-primary-gray-bg">
-      {/* Top border */}
-      <div className="border-t border-gray-300 mt-6"></div>
+      
+      <Line className="w-full" />
       
       {/* Founder name */}
       <h1 className="text-heading-1 font-gt-america py-6">Jessie Gabriel</h1>
       
-      {/* Bottom border after name */}
-      <div className="border-t border-gray-300"></div>
+      <Line className="w-full" />
       
       {/* Founder image */}
       <div className="my-6">
         <img 
-          src="../img/founder.png" 
+          src={require('../../img/founder.png')} 
           alt="Jessie Gabriel" 
           className="w-full"
         />
       </div>
       
       {/* Bottom border after image */}
-      <div className="border-t border-gray-300"></div>
+      <div className="mb-6"></div>
       
       {/* About section */}
       <CollapsibleSection title="ABOUT">
-        <div className="space-y-4">
-          <p className="text-sm uppercase font-medium font-gt-america">ALL PLACES FOUNDER</p>
+        <div>
+          <p className="text-sm uppercase font-medium font-gt-america mb-2">ALL PLACES FOUNDER</p>
           <p className="text-sm leading-relaxed font-times">
             Jessie Gabriel is the founder of All Places — a champion for women and a prominent voice on the role 
             of capital ownership and control in achieving gender equity. Raised by a single working mother in 
@@ -73,7 +74,7 @@ export const FounderContainer: React.FC = () => {
       
       {/* Experience section */}
       <CollapsibleSection title="EXPERIENCE">
-        <div className="space-y-6">
+        <div className="space-y-6 mb-6">
           <div>
             <h4 className="text-sm uppercase font-medium mb-2">EDUCATION</h4>
             <p className="text-sm leading-relaxed font-times">
@@ -95,9 +96,6 @@ export const FounderContainer: React.FC = () => {
           </div>
         </div>
       </CollapsibleSection>
-      
-      {/* Bottom border */}
-      <div className="border-t border-gray-300 mt-0"></div>
     </div>
   );
 };

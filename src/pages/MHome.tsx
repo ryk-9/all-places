@@ -14,20 +14,21 @@ const MHome: React.FC = () => {
       {/* Mobile container with width matching the PDF */}
       <div className="mobile-container">
         {/* Navigation */}
-        <NavContainer className="px-standard pt-3.5" />
+        <NavContainer className="pt-3.5" />
         
         {/* Hero section */}
-        <HeroContainer className="px-standard mt-10" />
+        <HeroContainer className="mt-10" />
         
         {/* Values section */}
         <ValuesContainer />
         
         {/* Register section - moved up to match PDF */}
         <RegisterContainer />
-        
+
         {/* Founder section */}
         <FounderContainer />
-        
+      </div>
+      <div>
         {/* Contact section */}
         <ContactContainer />
         

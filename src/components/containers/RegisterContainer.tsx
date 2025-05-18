@@ -5,12 +5,12 @@ export const RegisterContainer: React.FC = () => {
   return (
     <div className="bg-primary-gray-bg py-medium px-standard">
       {/* Main heading */}
-      <h2 className="text-heading-2 font-gt-america uppercase text-center mb-12">
+      <h2 className="text-heading-2 font-gt-america text-center mb-12">
         A better model.<br />Period.
       </h2>
       
       {/* Image grid */}
-      <div className="grid grid-cols-3 gap-1 mb-12">
+      <div className="grid grid-cols-3 gap-1 mb-24">
         <img 
           src="../../img/register-img-1.png" 
           alt="Woman with hair blowing" 

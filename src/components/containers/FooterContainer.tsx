@@ -23,7 +23,7 @@ export const FooterContainer: React.FC<FooterContainerProps> = ({ className = ''
   } catch (e) {}
 
   return (
-    <footer className={`bg-primary-gray-bg mb-12 py-medium flex flex-col items-center px-0 ${className}`}>
+    <footer className={`bg-primary-gray-bg py-medium flex flex-col items-center mb-12 px-0 ${className}`}>
       <div className="mb-8">
         {LogoComponent ? (
           <img src={LogoComponent} alt="All Places" className="w-16 h-16" />

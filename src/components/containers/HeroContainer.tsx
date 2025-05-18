@@ -32,7 +32,7 @@ export const HeroContainer: React.FC<ContainerProps> = ({ className = 'px-0' }) 
         All Places represents the next generation of law firms, built on an infrastructure that aligns incentives between our firm and our clients. We provide corporate legal support to established funds and mission-driven companies that are reshaping the world.
       </p>
       
-      <Line className="w-full mt-4 mb-5" />
+      <Line className="w-full mt-5 mb-5" />
     </div>
   );
 };
