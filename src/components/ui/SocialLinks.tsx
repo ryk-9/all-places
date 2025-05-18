@@ -53,8 +53,8 @@ export const SocialLinks: React.FC<SocialLinksCompProps> = ({ className = '' }) 
       
       {/* Legal notices */}
       <div className='flex flex-col items-center space-y-2'>
-        <p className='text-black uppercase'>ATTORNEY ADVERTISING</p>
-        <p className='text-black'>© 2022 ALL PLACES</p>
+        <p className='text-black uppercase font-times'>ATTORNEY ADVERTISING</p>
+        <p className='text-black font-times'>© 2022 ALL PLACES</p>
       </div>
     </footer>
   );

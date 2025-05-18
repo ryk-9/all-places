@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import App from './App'; // Use App.tsx instead of direct import to MHome
+import App from './App'; // Use App instead of direct MHome import
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

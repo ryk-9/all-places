@@ -10,26 +10,26 @@ import { FooterContainer } from '../components/containers/FooterContainer';
 
 const MHome: React.FC = () => {
   return (
-    <div className="bg-primary-cream">
-      {/* Mobile view container with fixed width matching PDF */}
+    <div className="bg-primary-gray-bg">
+      {/* Mobile container with width matching the PDF */}
       <div className="mobile-container">
         {/* Navigation */}
-        <NavContainer className="px-5 pt-3.5" />
+        <NavContainer className="px-standard pt-3.5" />
         
         {/* Hero section */}
-        <HeroContainer className="mt-[60px]" />
+        <HeroContainer className="px-standard mt-10" />
         
         {/* Values section */}
         <ValuesContainer />
+        
+        {/* Register section - moved up to match PDF */}
+        <RegisterContainer />
         
         {/* Founder section */}
         <FounderContainer />
         
         {/* Contact section */}
         <ContactContainer />
-        
-        {/* Register section */}
-        <RegisterContainer />
         
         {/* Newsletter signup */}
         <NewsContainer />

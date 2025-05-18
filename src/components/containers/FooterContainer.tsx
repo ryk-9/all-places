@@ -6,7 +6,6 @@ interface FooterContainerProps {
 }
 
 export const FooterContainer: React.FC<FooterContainerProps> = ({ className = '' }) => {
-  // Define links with actual URLs from the existing implementation
   const socialLinks: SocialLinkProps[] = [
     { name: 'INSTAGRAM', url: 'https://www.instagram.com/thisisallplaces/?hl=en' },
     { name: 'LINKEDIN', url: 'https://www.linkedin.com/company/thisisallplaces/' },
@@ -18,18 +17,14 @@ export const FooterContainer: React.FC<FooterContainerProps> = ({ className = ''
     { name: 'PRIVACY POLICY', url: '/privacy' }
   ];
 
-  // Try to import logo, fallback to text version if import fails
   let LogoComponent = null;
   try {
-    LogoComponent = require('../../../public/img/logo.svg').default;
-  } catch (e) {
-    // SVG import failed - will use text version
-  }
+    LogoComponent = '../../img/logo-2.svg';
+  } catch (e) {}
 
   return (
-    <footer className={`bg-[#f5f1eb] py-12 flex flex-col items-center ${className} border border-purple-500`}>
-      {/* Logo - with fallback */}
-      <div className="mb-10">
+    <footer className={`bg-primary-gray-bg mb-12 py-medium flex flex-col items-center px-0 ${className}`}>
+      <div className="mb-8">
         {LogoComponent ? (
           <img src={LogoComponent} alt="All Places" className="w-16 h-16" />
         ) : (
@@ -39,35 +34,30 @@ export const FooterContainer: React.FC<FooterContainerProps> = ({ className = ''
         )}
       </div>
       
-      {/* All links in one section with consistent spacing */}
-      <div className="flex flex-col items-center space-y-6 mb-12">
-        {/* Social links */}
+      <div className="flex flex-col items-center space-y-4 mb-8">
         {socialLinks.map((link) => (
           <a 
             key={link.name} 
             href={link.url}
-            className="text-lg hover:opacity-75 transition-opacity"
+            className="text-md hover:opacity-75 transition-opacity font-gt-america"
           >
             {link.name}
           </a>
         ))}
-        
-        {/* Legal links */}
         {legalLinks.map((link) => (
           <a 
             key={link.name} 
             href={link.url}
-            className="text-lg hover:opacity-75 transition-opacity"
+            className="text-md hover:opacity-75 transition-opacity font-gt-america"
           >
             {link.name}
           </a>
         ))}
       </div>
       
-      {/* Legal notices */}
-      <div className="flex flex-col items-center space-y-2">
-        <p className="text-lg">ATTORNEY ADVERTISING</p>
-        <p className="text-lg">© 2022 ALL PLACES</p>
+      <div className="flex flex-col items-center space-y-1">
+        <p className="text-md font-gt-america">ATTORNEY ADVERTISING</p>
+        <p className="text-md font-gt-america">© 2022 ALL PLACES</p>
       </div>
     </footer>
   );

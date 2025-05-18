@@ -10,27 +10,28 @@ export const NewsContainer: React.FC = () => {
   };
   
   return (
-    <div className="bg-[#f5f1eb] py-12 px-6">
+    <div className="bg-primary-cream py-medium px-standard">
       {/* Main heading - uppercase, centered, large */}
-      <h2 className="text-center text-2xl font-medium uppercase tracking-tight leading-tight mb-8">
+      <h3 className="text-heading-2 font-gt-america uppercase text-center tracking-tight leading-tight mb-8 font-normal">
         Join our newsletter for updates and early access to event registration. Founders tell us it's worth it.
-      </h2>
+      </h3>
       
       {/* Italic subheading */}
-      <p className="text-center italic text-xl mb-8">
+      <p className="text-center italic text-xl mb-8 font-times">
         Sign up for the newsletter
       </p>
       
       {/* Form with email input and arrow button */}
       <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
         <div className="relative">
-          {/* Label */}
-          <label className="block uppercase text-lg font-medium mb-2" htmlFor="email">
-            Email address*
-          </label>
-          
-          {/* Input with arrow button */}
+          {/* Input with label on the same line */}
           <div className="flex items-center border-b-2 border-black">
+            <label 
+              className="uppercase text-lg font-medium mr-4 whitespace-nowrap" 
+              htmlFor="email"
+            >
+              Email address*
+            </label>
             <input
               id="email"
               type="email"
@@ -42,7 +43,7 @@ export const NewsContainer: React.FC = () => {
             <button 
               type="submit" 
               aria-label="Submit"
-              className="flex-shrink-0"
+              className="flex-shrink-0 ml-2"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

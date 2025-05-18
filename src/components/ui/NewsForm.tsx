@@ -42,12 +42,12 @@ export const NewsletterForm: React.FC = () => {
   };
   
   return (
-    <div className="bg-[#f5f1eb] py-12 px-6">
-      <h2 className="text-center text-2xl font-medium uppercase tracking-tight leading-tight mb-8">
+    <div className="bg-primary-cream py-medium px-standard">
+      <h2 className="text-heading-2 font-gt-america uppercase text-center tracking-tight leading-tight mb-8">
         Join our newsletter for updates and early access to event registration. Founders tell us it's worth it.
       </h2>
       
-      <p className="text-center italic text-xl mb-8">
+      <p className="text-center italic text-xl mb-8 font-times">
         Sign up for the newsletter
       </p>
       
@@ -84,7 +84,7 @@ export const NewsletterForm: React.FC = () => {
           </div>
           
           {status !== 'idle' && (
-            <p className={`mt-2 text-sm ${status === 'error' ? 'text-red-600' : 'text-green-600'}`}>
+            <p className={`mt-2 text-sm font-times ${status === 'error' ? 'text-red-600' : 'text-green-600'}`}>
               {message}
             </p>
           )}
